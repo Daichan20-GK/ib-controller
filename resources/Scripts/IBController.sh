@@ -234,6 +234,8 @@ elif [[ "$os" = "$OS_OSX" ]]; then
 	gateway_install4j="${tws_path}/IB Gateway ${tws_version}/.install4j"
 fi
 
+vmoptions_source="${gateway_vmoptions}"
+
 if [[ "${entry_point}" = "${ENTRY_POINT_TWS}" ]]; then
 	if [[ -e "${tws_vmoptions}" ]]; then
 		vmoptions_source="${tws_vmoptions}"
